@@ -1,0 +1,190 @@
+//     // ignore: non_constant_identifier_names
+//     int ATeamPoints = 0;
+//     // ignore: non_constant_identifier_names
+//     int BTeamPoints = 0;
+// MaterialApp(
+//       debugShowCheckedModeBanner: false, // to remove the red mark
+//       home: Scaffold(
+//         appBar: AppBar(
+//           backgroundColor: Colors.orange,
+//           title: const Text(
+//             'Points Counter',
+//             style: TextStyle(
+//               color: Colors.black,
+//               fontSize: 25,
+//             ),
+//           ),
+//         ),
+//         body: Column(
+//           mainAxisAlignment: MainAxisAlignment.center,
+//           children: [
+//             SizedBox(
+//               height: 400,
+//               child: Row(
+//                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//                 children: [
+//                   Column(
+//                     children: [
+//                       const Text(
+//                         'Team A',
+//                         style: TextStyle(
+//                           fontSize: 30,
+//                         ),
+//                       ),
+//                       Text(
+//                         '$ATeamPoints',
+//                         style: const TextStyle(
+//                           fontSize: 100,
+//                         ),
+//                       ),
+
+//                       const SizedBox(
+//                         height: 10,
+//                       ),
+//                       ElevatedButton(
+//                         style: ElevatedButton.styleFrom(
+//                             backgroundColor: Colors.orange,
+//                             minimumSize: const Size(150, 50)),
+//                         onPressed: () {
+//                           setState(() {
+//                             ATeamPoints += 2;
+//                           });
+//                         },
+//                         child: const Text(
+//                           'Add 2 Point',
+//                           style: TextStyle(
+//                             fontSize: 20,
+//                             color: Colors.black,
+//                           ),
+//                         ),
+//                       ),
+
+//                       // RaisedButton(
+//                       //   onPressed: , // invokes function
+//                       //   child:,
+//                       // );
+
+//                       const SizedBox(
+//                         height: 10,
+//                       ),
+//                       ElevatedButton(
+//                         style: ElevatedButton.styleFrom(
+//                             backgroundColor: Colors.orange,
+//                             minimumSize: const Size(150, 50)),
+//                         onPressed: () {
+//                           setState(() {
+//                             ATeamPoints += 3;
+//                           });
+//                         },
+//                         child: const Text(
+//                           'Add 3 Point',
+//                           style: TextStyle(
+//                             fontSize: 20,
+//                             color: Colors.black,
+//                           ),
+//                         ),
+//                       ),
+//                     ],
+//                   ),
+//                   const VerticalDivider(
+//                     thickness: 1,
+//                     color: Colors.grey,
+//                   ),
+//                   Column(
+//                     children: [
+//                       const Text(
+//                         'Team B',
+//                         style: TextStyle(
+//                           fontSize: 30,
+//                         ),
+//                       ),
+//                       Text(
+//                         '$BTeamPoints',
+//                         style: const TextStyle(
+//                           fontSize: 100,
+//                         ),
+//                       ),
+//                       ElevatedButton(
+//                         style: ElevatedButton.styleFrom(
+//                             backgroundColor: Colors.orange,
+//                             minimumSize: const Size(150, 50)),
+//                         onPressed: () {
+//                           setState(() {
+//                             BTeamPoints++;
+//                           });
+//                         },
+//                         child: const Text(
+//                           'Add 1 Point',
+//                           style: TextStyle(
+//                             fontSize: 20,
+//                             color: Colors.black,
+//                           ),
+//                         ),
+//                       ),
+//                       const SizedBox(
+//                         height: 10,
+//                       ),
+//                       ElevatedButton(
+//                         style: ElevatedButton.styleFrom(
+//                             backgroundColor: Colors.orange,
+//                             minimumSize: const Size(150, 50)),
+//                         onPressed: () {
+//                           setState(() {
+//                             BTeamPoints += 2;
+//                           });
+//                         },
+//                         child: const Text(
+//                           'Add 2 Point',
+//                           style: TextStyle(
+//                             fontSize: 20,
+//                             color: Colors.black,
+//                           ),
+//                         ),
+//                       ),
+//                       const SizedBox(
+//                         height: 10,
+//                       ),
+//                       ElevatedButton(
+//                         style: ElevatedButton.styleFrom(
+//                             backgroundColor: Colors.orange,
+//                             minimumSize: const Size(150, 50)),
+//                         onPressed: () {
+//                           setState(() {
+//                             BTeamPoints += 3;
+//                           });
+//                         },
+//                         child: const Text(
+//                           'Add 3 Point',
+//                           style: TextStyle(
+//                             fontSize: 20,
+//                             color: Colors.black,
+//                           ),
+//                         ),
+//                       ),
+//                     ],
+//                   ),
+//                 ],
+//               ),
+//             ),
+//             const SizedBox(
+//               height: 50,
+//             ),
+//             ElevatedButton(
+//               style: ElevatedButton.styleFrom(
+//                   backgroundColor: Colors.orange,
+//                   minimumSize: const Size(150, 50)),
+//               onPressed: () {
+//                 setState(() {
+//                   ATeamPoints = 0;
+//                   BTeamPoints = 0;
+//                 });
+//               },
+//               child: const Text(
+//                 'Reset',
+//                 style: TextStyle(
+//                   fontSize: 20,
+//                   color: Colors.black,
+//                 ),
+//               ),
+//             ),
+//           ],
